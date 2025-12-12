@@ -64,7 +64,7 @@ void loop() {
   // خوێندنەوەی تێکڕای 10 خوێندنەوە بۆ کەمکردنەوەی ناڕێکی
   float sum = 0;
   for (int i = 0; i < 10; i++) {
-    sum += analogRead(A0);
+    sum += analogRead(26);
     delay(10);
   }
   
