@@ -22,7 +22,7 @@ except Exception as e:
 sensor = ADC(Pin(26))  # بەکارهێنانی GP26 بۆ ADC
 
 # ڕێکخستنی ١٠ LEDەکان
-led_pins = [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15]  # پینەکان زیاد بکە
+led_pins = [0, 1, 2, 3, 4, 5, 6, 7, 10, 11]  # پینەکان زیاد بکە
 leds = []
 for pin in led_pins[:10]:  # یەکەم ١٠ پین بەکاربهێنە
     try:
@@ -185,4 +185,5 @@ if __name__ == "__main__":
         print(f"Unexpected error: {e}")
         # خاموشکردنی هەموو LEDەکان لە دۆخی هەڵەدا
         for led in leds:
+
             led.value(0)
